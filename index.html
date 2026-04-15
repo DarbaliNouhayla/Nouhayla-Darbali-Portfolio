@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ND — CS Student & AI Builder</title>
+  <meta name="description" content="ND — Second-year CS student obsessed with AI/ML. Building intelligent systems and shipping real things.">
+  <meta property="og:title" content="ND — Portfolio">
+  <meta property="og:description" content="CS Student · AI/ML · Builder">
+  <meta property="og:image" content="/public/og-image.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="public/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">ND<span>.dev</span></div>
+    <ul class="nav-links">
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <a href="public/resume.pdf" target="_blank" class="nav-cta">resume.pdf</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div id="hero-canvas-wrap">
+      <canvas id="hero-cv"></canvas>
+    </div>
+    <div class="hero-text">
+      <p class="hero-tag">// cs student · ai researcher · builder</p>
+      <p class="hero-name"><span class="glow">Nouhayla Darbali</span></p>
+      <p class="hero-liner">
+        I build <span class="hl">intelligent systems</span> and ship real things.<br>
+        Second-year CS · obsessed with <span class="hl">AI/ML</span> · based somewhere with good coffee.
+      </p>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-scroll">scroll<span></span></div>
+      <p class="hero-hint">⟳ drag to rotate</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-tag">// selected work</p>
+    <h2 class="section-title">Projects<span class="dot">.</span></h2>
+    <div class="projects-grid">
+
+      <div class="proj-card proj-featured">
+        <div class="proj-glow"></div>
+        <p class="proj-number">01 — featured</p>
+        <h3 class="proj-title">ResearchPal AI</h3>
+        <p class="proj-desc">A full-stack RAG application for academic research. Features an agentic loop via MCP for live ArXiv retrieval and a fine-tuned Llama 3.2-3B model for specialized science explanations.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Fine-tuning</span>
+          <span class="proj-tag">RAG</span>
+          <span class="proj-tag">Agentic AI</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://huggingface.co/spaces/darbalinouhayla/researchpal" class="proj-link" target="_blank">HuggingFace Space</a>
+         
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-glow"></div>
+        <p class="proj-number">02</p>
+        <h3 class="proj-title">Football Outcome Predictor</h3>
+        <p class="proj-desc">A comparative study benchmarking multiple ML classifiers (Logistic Regression, SVM, KNN, Random Forest) against Hidden Markov Models to predict match outcomes. Focused on feature engineering from 10+ years of historical performance data.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Scikit-learn</span>
+          <span class="proj-tag">Benchmarking</span>
+          <span class="proj-tag">HMM</span>
+          <span class="proj-tag">Pandas</span>
+          <span class="proj-tag">Kaggle</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://www.kaggle.com/code/shiranaihito/footballpredictor" class="proj-link" target="_blank">Kaggle Notebook</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-glow"></div>
+        <p class="proj-number">03</p>
+        <h3 class="proj-title">Provincial HRMS</h3>
+        <p class="proj-desc">A production-ready Employee Management System for the Province of Zagora. Implements complex HR workflows, role-based security, and automated PDF reporting.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Django</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">Security</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/DarbaliNouhayla/Provincial-HRMS/" class="proj-link" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div id="stats">
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num">2<span>nd</span></div><div class="stat-label">year of CS</div></div>
+      <div class="stat"><div class="stat-num">3<span>+</span></div><div class="stat-label">projects shipped</div></div>
+      <div class="stat"><div class="stat-num" id="visitor-count">...</div><div class="stat-label">site visitors</div></div>
+      <div class="stat"><div class="stat-num">1<span>x</span></div><div class="stat-label">caffeine dependency</div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-tag">// who i am</p>
+    <h2 class="section-title">About<span class="dot">.</span></h2>
+    <div class="about-grid">
+      <div>
+        <div class="about-bio">
+          <p>I'm <span class="hl">Darbali Nouhayla</span> — a second-year CS student at EHTP with a deep obsession for <span class="hlv">artificial intelligence</span> and the kind of software that actually changes how people think and work.</p>
+          <p>When I'm not training models or debugging at 2am, you'll find me going through <span class="hlv">manhwa arcs</span>, arguing about <span class="hlv">geopolitics</span>, dissecting <span class="hlv">album rollouts</span>, or watching something I'll recommend to everyone I meet.</p>
+          <p>I believe the best engineers are the ones with wide taste — because <span class="hl">creativity is just pattern recognition across domains</span>.</p>
+          <div class="currently-reading">
+            <span class="cr-label">// currently reading</span>
+            <span class="cr-title">The Pragmatic Programmer</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="stack-title">// tech stack</p>
+        <div class="stack-grid">
+          <div class="stack-item">Python</div>
+          <div class="stack-item">PyTorch</div>
+          <div class="stack-item">React / Next.js</div>
+          <div class="stack-item">scikit-learn</div>
+          <div class="stack-item">FastAPI</div>
+          <div class="stack-item">SQL</div>
+          <div class="stack-item">Git</div>
+          <div class="stack-item">Linux</div>
+        </div>
+        <p class="stack-title">// outside the terminal</p>
+        <div class="interests-row">
+          <span class="interest int-music">music</span>
+          <span class="interest int-anime">anime</span>
+          <span class="interest int-manhwa">manhwa</span>
+          <span class="interest int-movies">movies & tv shows</span>
+          <span class="interest int-books">books</span>
+          <span class="interest int-politics">politics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-tag">// get in touch</p>
+    <h2 class="section-title">Let's talk<span class="dot">.</span></h2>
+    <div class="contact-inner">
+      <p class="contact-sub">Open to internship opportunities, research collaborations, and interesting projects. If you're building something cool in AI/ML — or just want to talk shop — my inbox is open.</p>
+      <div class="contact-links">
+        <a href="darbalinohayla@gmail.com" class="contact-btn primary">send a message</a>
+        <a href="https://github.com/DarbaliNouhayla/" target="_blank" rel="noopener noreferrer" class="contact-btn secondary">github</a>
+<a href="https://www.linkedin.com/in/nouhayladarbali/" target="_blank" rel="noopener noreferrer" class="contact-btn secondary">linkedin</a>
+
+<a href="https://huggingface.co/darbalinouhayla" target="_blank" rel="noopener noreferrer" class="contact-btn secondary">huggingface</a>
+<a href="https://www.kaggle.com/shiranaihito" target="_blank" rel="noopener noreferrer" class="contact-btn secondary">kaggle</a>
+      </div>
+      <p class="contact-email">or reach me at <a href="darbalinohayla@gmail.com">darbalinohayla@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">ND.dev — built with intention</div>
+    <div class="footer-right">
+      <span class="footer-visitors">👁 <span id="footer-visitors">...</span> visitors</span>
+      <span class="footer-copy">© 2025 ND</span>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS — order matters -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/hero3d.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/easter-egg.js"></script>
+
+</body>
+</html>

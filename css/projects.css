@@ -1,0 +1,128 @@
+/* ── PROJECTS SECTION ───────────────────────────────── */
+#projects { background: var(--bg); }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── PROJECT CARD ───────────────────────────────────── */
+.proj-card {
+  position: relative;
+  background: var(--bg2);
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s;
+  opacity: 0;
+}
+
+.proj-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--v), var(--b));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.proj-card:hover {
+  border-color: rgba(124, 58, 255, 0.45);
+  transform: translateY(-4px);
+}
+
+.proj-card:hover::before { transform: scaleX(1); }
+
+.proj-featured {
+  grid-column: 1 / -1;
+}
+
+.proj-featured .proj-title { font-size: 1.6rem; }
+
+/* ── CARD INNER ─────────────────────────────────────── */
+.proj-number {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--v);
+  letter-spacing: 0.18em;
+  margin-bottom: 1rem;
+}
+
+.proj-title {
+  font-family: var(--sans);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.proj-desc {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* ── TAGS ───────────────────────────────────────────── */
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.proj-tag {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  padding: 0.3rem 0.7rem;
+  border: 0.5px solid var(--border);
+  border-radius: 20px;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.proj-tag:hover {
+  border-color: var(--v);
+  background: rgba(124, 58, 255, 0.08);
+}
+
+/* ── LINKS ──────────────────────────────────────────── */
+.proj-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.proj-link {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  transition: color 0.2s;
+}
+
+.proj-link::before { content: '→ '; }
+.proj-link:hover { color: var(--accent); }
+
+/* ── GLOW ───────────────────────────────────────────── */
+.proj-glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(124, 58, 255, 0.08), transparent);
+  border-radius: 50%;
+  bottom: -60px;
+  right: -40px;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .proj-featured { grid-column: 1; }
+}

@@ -1,0 +1,70 @@
+/* ── CONTACT SECTION ────────────────────────────────── */
+#contact {
+  background: var(--bg);
+  text-align: center;
+}
+
+.contact-inner {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.contact-sub {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+/* ── BUTTONS ────────────────────────────────────────── */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.contact-btn {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  letter-spacing: 0.1em;
+  transition: all 0.2s;
+}
+
+.contact-btn.primary {
+  background: var(--v);
+  color: #fff;
+  border: 0.5px solid var(--v);
+}
+
+.contact-btn.primary:hover {
+  box-shadow: 0 0 28px rgba(124, 58, 255, 0.55);
+  transform: translateY(-2px);
+}
+
+.contact-btn.secondary {
+  border: 0.5px solid var(--border);
+  color: var(--muted);
+}
+
+.contact-btn.secondary:hover {
+  border-color: var(--v);
+  color: var(--accent);
+}
+
+.contact-email {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.contact-email a {
+  color: var(--accent);
+  transition: opacity 0.2s;
+}
+
+.contact-email a:hover { opacity: 0.75; }

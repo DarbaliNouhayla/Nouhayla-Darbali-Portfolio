@@ -1,0 +1,118 @@
+/* ── ABOUT SECTION ──────────────────────────────────── */
+#about {
+  background: var(--bg2);
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ── BIO ────────────────────────────────────────────── */
+.about-bio {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 2;
+  color: var(--muted);
+}
+
+.about-bio p {
+  margin-bottom: 1.2rem;
+  opacity: 0;
+}
+
+.about-bio .hl  { color: var(--text); }
+.about-bio .hlv { color: var(--accent); }
+
+/* ── CURRENTLY READING ──────────────────────────────── */
+.currently-reading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1rem;
+  border: 0.5px solid var(--border);
+  border-left: 2px solid var(--v);
+  border-radius: 0 6px 6px 0;
+  background: rgba(124, 58, 255, 0.04);
+}
+
+.cr-label {
+  font-size: 0.6rem;
+  color: var(--v);
+  letter-spacing: 0.14em;
+}
+
+.cr-title {
+  font-size: 0.78rem;
+  color: var(--text);
+}
+
+/* ── STACK GRID ─────────────────────────────────────── */
+.about-right {}
+
+.stack-title {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--v);
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stack-item {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  padding: 0.55rem 0.8rem;
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.stack-item:hover {
+  border-color: var(--v);
+  color: var(--accent);
+  background: rgba(124, 58, 255, 0.06);
+}
+
+/* ── INTERESTS ──────────────────────────────────────── */
+.interests-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.interest {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  transition: transform 0.2s;
+}
+
+.interest:hover { transform: translateY(-2px); }
+
+.int-music   { border: 0.5px solid rgba(59,  130, 246, 0.4); color: #93c5fd; }
+.int-anime   { border: 0.5px solid rgba(236, 72,  153, 0.4); color: #f9a8d4; }
+.int-books   { border: 0.5px solid rgba(245, 158, 11,  0.4); color: #fcd34d; }
+.int-politics{ border: 0.5px solid rgba(34,  197, 94,  0.4); color: #86efac; }
+.int-manhwa  { border: 0.5px solid rgba(167, 139, 250, 0.4); color: #c4b5fd; }
+.int-movies  { border: 0.5px solid rgba(239, 68,  68,  0.4); color: #fca5a5; }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}

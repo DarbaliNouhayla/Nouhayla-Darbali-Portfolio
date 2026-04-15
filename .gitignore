@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Logs
+*.log
+
+# Editor junk
+.vscode/
+.idea/
+
+# Environment variables (IMPORTANT — never commit these)
+.env
+.env.local
