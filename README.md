@@ -1,4 +1,4 @@
-# NOuhayla Darbali — Portfolio
+# Nouhayla Darbali — Portfolio
 
 Personal portfolio of Darbali Nouhayla · CS Student & AI/ML Builder  
 Live at: `DarbaliNouhyla-portfolio.vercel.app`
