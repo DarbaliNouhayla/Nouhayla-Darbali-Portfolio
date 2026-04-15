@@ -1,6 +1,6 @@
-# ND — Portfolio
+# NOuhayla Darbali — Portfolio
 
-Personal portfolio of ND · CS Student & AI/ML Builder  
+Personal portfolio of Darbali Nouhayla · CS Student & AI/ML Builder  
 Live at: `DarbaliNouhyla-portfolio.vercel.app`
 
 ## Stack
