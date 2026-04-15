@@ -1,8 +1,8 @@
 # Nouhayla Darbali — Portfolio
 
 Personal portfolio of Darbali Nouhayla · CS Student & AI/ML Builder  
-Live at: `[DarbaliNouhyla-portfolio.vercel.app](https://nouhayla-darbali-portfolio.vercel.app/)`
-or at: `[DarbaliNouhyla-portfolio.vercel.app](https://nouhayla-darbali-portfolio.vercel.app/)`
+Live at: `https://nouhayla-darbali-portfolio.vercel.app/`
+or at: `https://darbalinouhayla.github.io/Nouhayla-Darbali-Portfolio/`
 
 ## Stack
 Vanilla HTML / CSS / JS — zero frameworks, zero build step  
