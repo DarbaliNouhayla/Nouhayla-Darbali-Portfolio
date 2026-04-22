@@ -2,7 +2,7 @@
 
 Personal portfolio of Darbali Nouhayla · CS Student & AI/ML Builder  
 ✨ Live Deployment
-Primary Link: [nouhayla-darbali-portfolio.vercel.app](https://nouhayla-darbali-portfolio.vercel.app/)
+Primary Link: [nouhayla-darbali-portfolio.vercel.app](https://nouhayladarbali.vercel.app/)
 
 Alternative Link: [darbalinouhayla.github.io/Nouhayla-Darbali-Portfolio](https://darbalinouhayla.github.io/Nouhayla-Darbali-Portfolio/)
 
