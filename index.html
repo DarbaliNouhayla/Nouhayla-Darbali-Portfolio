@@ -29,11 +29,12 @@
   <nav id="navbar">
     <div class="nav-logo">ND<span>.dev</span></div>
     <ul class="nav-links">
-      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#projects-start">projects</a></li>
       <li><a href="#about">about</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
-    <a href="public/DarbaliNouhaylaCV.pdf" target="_blank" class="nav-cta">resume.pdf</a>
+    <a href="public/DarbaliNouhaylaCVeng.pdf" target="_blank" class="nav-cta">resume.pdf</a>
   </nav>
 
   <!-- HERO -->
@@ -46,7 +47,7 @@
       <p class="hero-name"><span class="glow">Nouhayla Darbali</span></p>
       <p class="hero-liner">
         I build <span class="hl">intelligent systems</span> and ship real things.<br>
-        Second-year CS · obsessed with <span class="hl">AI/ML</span> · based somewhere with good coffee.
+        Third-year CS · obsessed with <span class="hl">AI/ML</span> · based somewhere with good coffee.
       </p>
     </div>
     <div class="hero-bottom">
@@ -55,12 +56,71 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+   <!-- PROJECTS -->
   <section id="projects">
-    <p class="section-tag">// selected work</p>
+ 
+    <!-- EXPERIENCE  -->
+    <div id="experience" style="margin-bottom:4rem">
+    <p class="section-tag">// where i've worked</p>
+    <h2 class="section-title">Experience<span class="dot">.</span></h2>
+    <div class="projects-grid">
+ 
+      <div class="proj-card proj-featured">
+        <div class="proj-glow"></div>
+        <p class="proj-number">Civil Infrastructure AI Lab / CID — Jul 2026 – Sep 2026</p>
+        <h3 class="proj-title">Computer Vision &amp; AI Engineering Intern</h3>
+        <p class="proj-desc">Built semantic segmentation pipelines for structural defect (spalling) detection, benchmarking CNNs (U-Net, DeepLabV3+) against SegFormer, SAM3 and YOLOv11. SegFormer-B2 gave the best results (0.73 IoU, 0.79 Dice). Annotated data in Roboflow and curated it in FiftyOne, adding 10% synthetic negatives and Albumentations augmentation to target false positives, with a custom Focal + Dice loss in PyTorch. Source code, training pipelines, dataset auditing scripts and the Streamlit app are version-controlled in the project repository.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Computer Vision</span>
+          <span class="proj-tag">SegFormer</span>
+          <span class="proj-tag">PyTorch</span>
+          <span class="proj-tag">Streamlit</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/DarbaliNouhayla/spalling-segmentation" class="proj-link" target="_blank">GitHub Repository</a>
+          <a href="https://huggingface.co/darbalinouhayla/spalling_segmentation_segformer_mitb2" class="proj-link" target="_blank">HuggingFace Model Hub</a>
+          <a href="https://spalling-segmentation.streamlit.app/" class="proj-link" target="_blank">Live Web App</a>
+        </div>
+      </div>
+ 
+      <div class="proj-card">
+        <div class="proj-glow"></div>
+        <p class="proj-number">Kainos Technologies — Jul 2026 – Sep 2026 · Remote</p>
+        <h3 class="proj-title">Software &amp; AI Engineering Intern</h3>
+        <p class="proj-desc">Built an extensible async OSINT ingestion engine scraping 25+ financial sources (Playwright, httpx), using Adapter, Strategy and Factory patterns so new sources plug in with minimal code, with PostgreSQL 18 (asyncpg) and TTL deduplication. Architected an orchestrated Multi-Agent System with the Groq API (Llama 3.1 8B) and FastAPI for supplier risk profiling, market trend analysis and CVE vulnerability enrichment.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Multi-Agent Systems</span>
+          <span class="proj-tag">FastAPI</span>
+          <span class="proj-tag">PostgreSQL</span>
+          <span class="proj-tag">Playwright</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/DarbaliNouhayla/Websites_Scrapping" class="proj-link" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+ 
+      <div class="proj-card">
+        <div class="proj-glow"></div>
+        <p class="proj-number">Provincial Administration, Zagora — Jul 2025 – Aug 2025</p>
+        <h3 class="proj-title">Full-Stack Software Development Intern</h3>
+        <p class="proj-desc">A production-ready Employee Management System for the Province of Zagora. Implements complex HR workflows, role-based security (RBAC) and automated PDF reporting (ReportLab) for 100+ personnel.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Django</span>
+          <span class="proj-tag">MySQL</span>
+          <span class="proj-tag">Security</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/DarbaliNouhayla/Provincial-HRMS/" class="proj-link" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+ 
+    </div>
+    </div>
+ 
+    <p class="section-tag" id="projects-start">// selected work</p>
     <h2 class="section-title">Projects<span class="dot">.</span></h2>
     <div class="projects-grid">
-
+ 
       <div class="proj-card proj-featured">
         <div class="proj-glow"></div>
         <p class="proj-number">01 — featured</p>
@@ -93,8 +153,8 @@
           <a href="https://www.kaggle.com/code/shiranaihito/distracteddriverdetection1" class="proj-link" target="_blank">Kaggle (YOLO Tuning)</a>
         </div>
       </div>
-
-
+ 
+ 
       <div class="proj-card">
         <div class="proj-glow"></div>
         <p class="proj-number">03</p>
@@ -111,37 +171,22 @@
           <a href="https://www.kaggle.com/code/shiranaihito/footballpredictor" class="proj-link" target="_blank">Kaggle Notebook</a>
         </div>
       </div>
-
-      <div class="proj-card">
-        <div class="proj-glow"></div>
-        <p class="proj-number">04</p>
-        <h3 class="proj-title">Provincial HRMS</h3>
-        <p class="proj-desc">A production-ready Employee Management System for the Province of Zagora. Implements complex HR workflows, role-based security, and automated PDF reporting.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">Django</span>
-          <span class="proj-tag">MySQL</span>
-          <span class="proj-tag">Security</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/DarbaliNouhayla/Provincial-HRMS/" class="proj-link" target="_blank">GitHub Repo</a>
-        </div>
-      </div>
-
+ 
     </div>
 </section>
-
+ 
     </div>
   </section>
-
+ 
   <!-- STATS -->
   <div id="stats">
     <div class="stats-row">
-      <div class="stat"><div class="stat-num">2<span>nd</span></div><div class="stat-label">year of CS</div></div>
-      <div class="stat"><div class="stat-num">3<span>+</span></div><div class="stat-label">projects shipped</div></div>
+      <div class="stat"><div class="stat-num">3<span>nd</span></div><div class="stat-label">year of CS</div></div>
+      <div class="stat"><div class="stat-num">6<span>+</span></div><div class="stat-label">projects shipped</div></div>
       <div class="stat"><div class="stat-num">1<span>x</span></div><div class="stat-label">caffeine dependency</div></div>
     </div>
   </div>
-
+ 
   <!-- ABOUT -->
   <section id="about">
     <p class="section-tag">// who i am</p>
@@ -149,12 +194,13 @@
     <div class="about-grid">
       <div>
         <div class="about-bio">
-          <p>I'm <span class="hl">Darbali Nouhayla</span> — a second-year CS student at EHTP with a deep obsession for <span class="hlv">artificial intelligence</span> and the kind of software that actually changes how people think and work.</p>
+          <p>I'm <span class="hl">Darbali Nouhayla</span> — a third-year AI Engineering student at EHTP with a deep obsession for <span class="hlv">artificial intelligence</span> and the kind of software that actually changes how people think and work.</p>
+          <p>Through my internships I've built <span class="hl">computer vision pipelines</span>, <span class="hl">multi-agent systems</span> and async backends, and I'm now looking for a <span class="hl">PFE internship in AI/ML engineering</span> starting early 2027.</p>
           <p>When I'm not training models or debugging at 2am, you'll find me going through <span class="hlv">manhwa arcs</span>, arguing about <span class="hlv">geopolitics</span>, dissecting <span class="hlv">album rollouts</span>, or watching something I'll recommend to everyone I meet.</p>
           <p>I believe the best engineers are the ones with wide taste — because <span class="hl">creativity is just pattern recognition across domains</span>.</p>
           <div class="currently-reading">
             <span class="cr-label">// currently reading</span>
-            <span class="cr-title">The Pragmatic Programmer</span>
+            <span class="cr-title">Systems Design in the LLM Era Patterns and principles for production-grade AI architecture</span>
           </div>
         </div>
       </div>
@@ -164,12 +210,16 @@
           <div class="stack-item">Python</div>
           <div class="stack-item">PyTorch</div>
           <div class="stack-item">YOLOv8</div>
+          <div class="stack-item">SegFormer</div>
           <div class="stack-item">FastAPI</div>
           <div class="stack-item">LangChain / MCP</div>
           <div class="stack-item">ChromaDB</div>
+          <div class="stack-item">PostgreSQL</div>
+          <div class="stack-item">Django</div>
           <div class="stack-item">Docker</div>
-          <div class="stack-item">Kubernetes</div>
-          <div class="stack-item">React / Next.js</div>
+          <div class="stack-item">Hugging Face</div>
+          <div class="stack-item">ONNX</div>
+          <div class="stack-item">React</div>
           <div class="stack-item">Three.js</div>
           <div class="stack-item">Git</div>
           <div class="stack-item">Linux</div>
